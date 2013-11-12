@@ -4,7 +4,9 @@
   <script src="vertxbus.min.js"></script>
   <script>
   window.onload = function () {
-	  var eventBus = new vertx.EventBus("http://localhost:8080/chat");
+	  var eventBus = new vertx.EventBus(window.location.protocol + '//' +
+	      window.location.hostname + ':' +
+	      window.location.port + '/chat');
 	  var userName = document.querySelector("input[name=userName]");
 	  var userListContainer = document.getElementById("userListContainer");
 	  var chatContainer = document.getElementById("chatContainer");

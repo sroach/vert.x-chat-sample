@@ -1,3 +1,4 @@
 {
-  "main":"com.moandjiezana.vertx.chat.ChatVerticle"
+    "main": "chatserver.js",
+    "auto-redeploy": true
 }
