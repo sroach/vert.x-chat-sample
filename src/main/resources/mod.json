@@ -1,4 +1,5 @@
 {
     "main": "chatserver.js",
-    "auto-redeploy": true
+    "auto-redeploy": true,
+    "caching": false
 }
